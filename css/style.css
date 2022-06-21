@@ -1,0 +1,39 @@
+.grid-container {
+    display: grid;
+    grid-template: "hader" ;
+}
+
+
+/* Header */
+
+.header {
+    grid-area: header;
+}
+
+.bg-dark-1 { 
+    background-color: #1f1f1f;
+}
+
+.nav-logo {
+    display: block;
+    width: auto;
+    max-height: 50px;
+}
+
+.navbar-toggler-icon {
+    background-image: url(/images/header/descarga.svg);
+}
+
+.navbar-toggler {
+    color: rgba(255, 255, 255, .55);
+    border-color: rgba(255, 255, 255, .1);
+}
+
+.navbar-nav {
+    font-size: 0.88em;
+	font-family: "Poppins", sans-serif;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, .55);
+}
