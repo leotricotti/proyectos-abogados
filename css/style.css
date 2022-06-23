@@ -47,7 +47,7 @@ table {
 
 .grid-container {
     display: grid;
-    grid-template: "hader" "inicio" "quienes-somos";
+    grid-template: "hader" "inicio" "quienes-somos" "asesor"60rem;
 }
 
 /* Header */
@@ -131,3 +131,23 @@ table {
 	margin: auto;
 }
 
+/* Asesoramiento */
+
+.hero-bg {
+    grid-area: asesor;
+}
+
+.hero-overlay {
+	background: rgba(25, 22, 20, 0.7);
+    height: 75vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.hero-bg {
+	background: url("/images/asesor/hero-bg.jpg") center center no-repeat;
+	background-size: cover;
+    max-height: 75vh;
+}
