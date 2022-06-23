@@ -1,6 +1,6 @@
 .grid-container {
     display: grid;
-    grid-template: "hader" ;
+    grid-template: "hader" "inicio";
 }
 
 
@@ -36,4 +36,36 @@
 
 .navbar-nav .nav-link {
     color: rgba(255, 255, 255, .55);
+}
+
+/* Inicio */
+
+.inicio {
+    grid-area: inicio;
+}
+
+.inicio-logo {
+    max-width: 170px;
+}
+
+.inicio-logo {
+    max-width: 170px;
+}
+
+.m-auto-logo {
+    margin-left: 98px;
+    margin-right: 98px;
+}
+
+.btn-secondary {
+    background-color: #3c3c3c;
+}
+
+.btn {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+	border-radius: 2px;
+    padding: 12px 30px;
+    border: 0;
 }
