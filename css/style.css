@@ -47,7 +47,7 @@ table {
 
 .grid-container {
     display: grid;
-    grid-template: "hader" "inicio" "quienes-somos" "asesor"60rem;
+    grid-template: "hader" "inicio" "quienes-somos" "asesor" "servicios";
 }
 
 /* Header */
@@ -150,4 +150,23 @@ table {
 	background: url("/images/asesor/hero-bg.jpg") center center no-repeat;
 	background-size: cover;
     max-height: 75vh;
+}
+
+/* Servicios */
+
+.servicios {
+    grid-area: servicios;
+}
+
+#servicios {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    opacity: .6;
+    margin: auto;
+    display: block;
 }
