@@ -12,11 +12,11 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/css2">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&amp;display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&amp;display=swap"
-        rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw==" crossorigin="anonymous" />
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
     <!-- Fontawesome -->
@@ -159,12 +159,121 @@
             </div>
         </div> 
 
+        <div id="contactenos" class="anchor-guide">
+            <div class="container py-2 mt-5">
+                <div class="row">
+                    <div class="col-lg-6  vertical-center">
+                        <div class="w-100">
+                            <h5 class="section-title">
+                                Contáctenos
+                            </h5>
+                            <h2 class=" fw-bolder ">
+                                Comuníquese con nosotros
+                            </h2>
+                            <p class="opacity-half">
+                                Comentenos cual es su necesidad y seguramente tendremos una propuesta para hacerle, su consulta es bienvenida!
+                            </p>
+                            <table class="table table-responsive my-5">
+                                <tr>
+                                    <td>
+                                        Telefono
+                                    </td>
+                                    <td>
+                                        +54 9 11-3173-4756
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Email
+                                    </td>
+                                    <td>
+                                        irsestudio@gmail.com
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Direccion
+                                    </td>
+                                    <td>
+                                        Ortiz de Ocampo 538 e/ Pringles y Belgrano. Quilmes 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Horarios de atención
+                                    </td>
+                                    <td>
+                                        Lunes a Viernes de 10 a 19 hs
+                                        <br>
+                                        Turnos: Con cita previa
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 ps-lg-5">
+                        <div class="w-100 py-4">
+                            <form class="mt-5 py-lg-5" action="/mailing/form_mailing.php" method="POST" id="contact-form">
+                                <div class="form-floating mb-3">
+                                    <input type="text" name="name" class="form-control" id="formName" required placeholder=" ">
+                                    <label for="formName">
+                                        Nombre y apellido / Empresa
+                                    </label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" name="email" class="form-control " id="formEmail" placeholder=" " required>
+                                    <label for="formEmail">
+                                        Correo Electrónico
+                                    </label>
+                                </div>
+                                <div class="form-floating ">
+                                    <textarea class="form-control" placeholder=" " name="message" id="formMessage" required style="height: 100px"></textarea>
+                                    <label for="formMessage">
+                                        Mensaje
+                                    </label>
+                                </div>
+                                <div class="row" id="sendCheck">
+                                    <div class="col-6 py-4">
+                                        <div class="form-check w-100">
+                                            <input required type="checkbox" value="" id="form_token" name="form_token" class="form-check-input">
+                                            <label for="form_token" class="form-check-label" required>
+                                                No soy un robot
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6  py-4">
+                                        <button type="submit" class="btn btn-secondary px-4 w-100" id="sendButton">
+                                            Enviar mensaje
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>    
     
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: true,
+            live: true,
+            callback: function(box) {},
+            scrollContainer: null,
+            resetAnimation: true,
+        });
+        wow.init();
+    </script>
 
-
-    </div>
+</body>
 
 
 

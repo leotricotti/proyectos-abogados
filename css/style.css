@@ -47,13 +47,14 @@ table {
 
 .grid-container {
     display: grid;
-    grid-template: "hader" "inicio" "quienes-somos" "asesor" "servicios" "tribunales" 60rem "footer";
+    grid-template: "hader" "inicio" "quienes-somos" "asesor" "servicios" "tribunales" "contactenos" "footer";
 }
 
 /* Header */
 
 .header {
     grid-area: header;
+    width: 100%;
 }
 
 .bg-dark-1 { 
@@ -88,6 +89,7 @@ table {
 
 .inicio {
     grid-area: inicio;
+    width: 100%;
 }
 
 .inicio-logo {
@@ -120,6 +122,7 @@ table {
 
 #quienessomos {
     grid-area: quienes-somos;
+    width: 100%;
 }
 
 .aboutus-img {
@@ -135,6 +138,7 @@ table {
 
 .hero-bg {
     grid-area: asesor;
+    width: 100%;
 }
 
 .hero-overlay {
@@ -155,6 +159,7 @@ table {
 
 .servicios {
     grid-area: servicios;
+    width: 100%;
 }
 
 #servicios {
@@ -186,4 +191,33 @@ table {
     align-items: center
 }
  
+/* Contacto */
+
+#contactenos {
+    grid-area: contactenos;
+    width: 100%;
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.btn {
+	border-radius: 2px;
+	padding: 12px 30px;
+	border: 0;
+}
+
+.btn-secondary {
+	background: #3c3c3c;
+}
+
+
+@media (max-width: 992px) {
+	.vh-75-responsive {
+		min-height: 30vh !important;
+	}
+}
 
