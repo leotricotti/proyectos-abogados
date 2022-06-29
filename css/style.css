@@ -64,7 +64,7 @@ table {
 }
 
 .navbar-toggler-icon {
-    background-image: url(/images/header/descarga.svg);
+    background-image: url(images/header/descarga.svg);
 }
 
 .navbar-toggler {
@@ -144,7 +144,7 @@ table {
 }
 
 .hero-bg {
-	background: url("/images/asesor/hero-bg.jpg") center center no-repeat;
+	background: url("../images/asesor/hero-bg.jpg") center center no-repeat;
 	background-size: cover;
     max-height: 75vh;
 }
@@ -175,7 +175,7 @@ table {
     grid-area: tribunales;
     width: 100%;
     max-height: 50vh;
-    background: url("/images/tribunales/tribunales-bg.jpg") right center no-repeat;
+    background: url("../images/tribunales/tribunales-bg.jpg") right center no-repeat;
 	background-size: cover;
 }
 
